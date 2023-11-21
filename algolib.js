@@ -4,7 +4,7 @@ server =new a.Algodv2("", "https://mainnet-api.algonode.cloud", 443)
 
 accountinformation = async function(addr) {
  
-  return server.accountInformation(addr)
+  return server.accountInformation(addr || addr.addr).do()
 }
 
 getaccount = function(mnemonic) {
