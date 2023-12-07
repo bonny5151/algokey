@@ -1,5 +1,5 @@
 algo = require("algosdk")
-server =new a.Algodv2("", "https://mainnet-api.algonode.cloud", 443)
+server =new algo.Algodv2("", "https://mainnet-api.algonode.cloud", 443)
 
 
 accountinformation = async function(addr) {

@@ -28,9 +28,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.masterDerivationKeyToMnemonic = exports.mnemonicToMasterDerivationKey = exports.secretKeyToMnemonic = exports.mnemonicToSecretKey = exports.seedFromMnemonic = exports.mnemonicFromSeed = exports.NOT_IN_WORDS_LIST_ERROR_MSG = exports.FAIL_TO_DECODE_MNEMONIC_ERROR_MSG = void 0;
 /* eslint-disable no-bitwise */
-const english_1 = __importDefault(require("./wordlists/english"));
-const nacl = __importStar(require("../nacl/naclWrappers"));
-const address = __importStar(require("../encoding/address"));
+const english_1 = __importDefault(require("algosdk/dist/cjs/mnemonic/wordlists/english"));
+const nacl = __importStar(require("algosdk/dist/cjs/nacl/naclWrappers"));
+const address = __importStar(require("algosdk/dist/cjs/encoding/address"));
 exports.FAIL_TO_DECODE_MNEMONIC_ERROR_MSG = 'failed to decode mnemonic';
 exports.NOT_IN_WORDS_LIST_ERROR_MSG = 'the mnemonic contains a word that is not in the wordlist';
 // https://stackoverflow.com/a/51452614
